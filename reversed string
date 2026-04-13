@@ -1,0 +1,6 @@
+[23bee024@mepcolinux ex9]$cat 9a.py
+s = raw_input("enter the string ")
+rev = s[::-1]
+length = len(s)
+print"Reversed string:", rev
+print"Length:", length
