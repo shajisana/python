@@ -1,21 +1,13 @@
-def add_key_to_dictionary(d):
-    key = raw_input("Enter key to add: ")
-    value = int(input("Enter value: "))
-    d[key] = value
-my_dict = { 'apple': 50, 'banana': 20, 'cherry': 40 }
+Original Dictionary:
+{'cherry': 40, 'apple': 50, 'banana': 20}
 
-print("Original Dictionary:")
-print(my_dict)
+Dictionary sorted by value:
+{'cherry': 40, 'banana': 20, 'apple': 50}
+Enter key to add: date
+Enter value: 10
 
-sorted_dict = dict(sorted(my_dict.items(), key=lambda item: item[1]))
-print("\nDictionary sorted by value:")
-print(sorted_dict)
+Dictionary after adding new key:
+{'date': 10, 'cherry': 40, 'apple': 50, 'banana': 20}
 
-add_key_to_dictionary(my_dict)
-
-print("\nDictionary after adding new key:")
-print(my_dict)
-
-sorted_dict = dict(sorted(my_dict.items(), key=lambda item: item[1]))
-print("\nDictionary sorted again by value:")
-print(sorted_dict)
+Dictionary sorted again by value:
+{'date': 10, 'cherry': 40, 'banana': 20, 'apple': 50}
